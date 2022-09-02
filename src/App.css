@@ -1,6 +1,5 @@
 .nav{
   background-color: #6F439C;
-  height: 6rem;
 }
 .div{
   margin-left: 25%;
@@ -8,12 +7,11 @@
 }
 .search{
   background-color: #353239;
-  margin-top: 6rem;
-  height: 10%;
-  
 }
 .main{
   background-color: #2B292E;
+  height:calc(100vh - 100px);
+  overflow: hidden;
 }
 
 /* Bootstrap 4 text input with search icon */
@@ -36,4 +34,19 @@
     border: none;
     color: #aaa;
     cursor: pointer;
+    width:100%
+}
+
+.todo{
+  height: 40vh;
+  overflow-y: auto;
+}
+
+.checked-todo {
+  text-decoration: line-through black 5px;
+  margin-right: 10px;
+}
+.not-checked-todo{
+  text-decoration: none;
+  margin-right: 10px;
 }
